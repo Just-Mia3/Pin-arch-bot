@@ -8,7 +8,7 @@ TOKEN = os.environ["BOT_TOKEN"]
 async def handle_link(update: Update, context: ContextTypes.DEFAULT_TYPE):
   url = update.message.text
 
-  if "pinterest.com" not in url
+  if "pinterest.com" not in url:
     await update.message.reply_text("Please send a vaild Pinterest link")
     return
 
